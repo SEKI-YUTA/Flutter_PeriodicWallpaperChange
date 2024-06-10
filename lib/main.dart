@@ -115,14 +115,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
   @override
   void initState() {
     // TODO: implement initState
@@ -152,10 +144,10 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
+      floatingActionButton: const FloatingActionButton(
+        onPressed: null,
         tooltip: 'Increment',
-        child: const Icon(Icons.add),
+        child: Icon(Icons.add),
       ),
     );
   }
