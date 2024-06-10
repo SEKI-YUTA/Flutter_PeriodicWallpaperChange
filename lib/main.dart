@@ -47,7 +47,7 @@ void _changeWallpaperPeriodically() {
     Workmanager().registerPeriodicTask(
       periodicUniqueName,
       periodic1hourTaskName,
-      frequency: const Duration(minutes: 15),
+      frequency: const Duration(hours: 1),
     );
   } else {
     print(
